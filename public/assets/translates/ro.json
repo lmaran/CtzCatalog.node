@@ -1,0 +1,40 @@
+﻿{
+    "Menu":
+    {
+        "Pick Orders": "Comenzi de livrare",
+        "Products": "Produse",
+        "Customers": "Clienti",
+        "OptionSets": "Seturi de optiuni",
+        "Attributes": "Atribute",
+        "AttributeSets": "Seturi de atribute",
+        "UMs": "Unitati de Masura",
+        "TechSpecs": "TechSpecs"
+    },
+ 
+    "Navbar":
+    {
+        "Admin":"Administrare",
+        "Admin.Users":"Utilizatori Inregistrati",
+        "Admin.WhiteList":"Email-uri aprobate",
+        "Admin.ResetPasswords":"Reseteaza Parole",
+
+        "Register": "Inregistrare",
+        "Login": "Autentificare",
+        "Logout": "Deconectare",
+
+        "Language": "Limba",
+        "Language.Romanian": "Romana",
+        "Language.English": "Engleza",
+        "Language.Spanish": "Spaniola"
+    },
+
+    "GlobalButtons":
+    {
+        "Add": "Adauga",
+        "Create": "Creaza",
+        "Update": "Actualizeaza",
+        "Delete": "Sterge",
+        "Save": "Salveaza",
+        "Cancel": "Renunta"
+    }
+}

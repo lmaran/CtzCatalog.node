@@ -1,0 +1,39 @@
+﻿doctype
+html
+    head
+        //- no spaces before '=' 
+
+        //- https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/blob/master/app/views/layout.jade
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        link(rel='shortcut icon', href='/bootstrap-3.0.0/assets/ico/favicon.png')
+        title= title
+
+        link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css', rel='stylesheet')
+        link(href='public/assets/css/site.css', rel='stylesheet')
+    body
+
+        .navbar.navbar-inverse.navbar-fixed-top
+            .container
+                .navbar-header
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/') Scoala 21
+                .collapse.navbar-collapse
+                    ul.nav.navbar-nav
+                        li.active
+                            a(href='/') Home
+                        li
+                            a(href='/teachers') Profesori
+                        li
+                            a(href='/contact') Contact
+
+        block content
+
+        //- script(src="/bower_components/lodash/dist/lodash.min.js")
+        script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+        script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")

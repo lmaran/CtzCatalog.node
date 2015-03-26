@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f8b81240-20ac-41e2-a549-8d2d8321b616}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>server\app.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="bower.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="public\index.html" />
+    <Content Include="public\apple-touch-icon.png" />
+    <Content Include="public\favicon.ico" />
+    <Compile Include="server\app.js" />
+    <Compile Include="server\routes.js" />
+    <Compile Include="public\app\app.js" />
+    <Content Include="public\app\admin\attributes\attribute.html" />
+    <Content Include="public\app\admin\attributes\attributes.html" />
+    <Compile Include="public\app\admin\attributes\attributeController.js" />
+    <Compile Include="public\app\admin\attributes\attributesController.js" />
+    <Compile Include="public\app\admin\attributes\attributeService.js" />
+    <Content Include="public\app\admin\attributeSets\attributes.html" />
+    <Content Include="public\app\admin\attributeSets\attributeSet.html" />
+    <Compile Include="public\app\admin\attributeSets\attributeSetController.js" />
+    <Compile Include="public\app\admin\attributeSets\attributeSetsController.js" />
+    <Compile Include="public\app\admin\attributeSets\attributeSetService.js" />
+    <Content Include="public\app\admin\customers\customer.html" />
+    <Content Include="public\app\admin\customers\customers.html" />
+    <Compile Include="public\app\admin\customers\customerController.js" />
+    <Compile Include="public\app\admin\customers\customersController.js" />
+    <Compile Include="public\app\admin\customers\customerService.js" />
+    <Content Include="public\app\admin\home\home.html" />
+    <Compile Include="public\app\admin\home\homeController.js" />
+    <Content Include="public\app\admin\navbar\navbar.html" />
+    <Compile Include="public\app\admin\navbar\navbarController.js" />
+    <Content Include="public\app\admin\optionSets\optionSet.html" />
+    <Content Include="public\app\admin\optionSets\optionSets.html" />
+    <Compile Include="public\app\admin\optionSets\optionSetController.js" />
+    <Compile Include="public\app\admin\optionSets\optionSetsController.js" />
+    <Compile Include="public\app\admin\optionSets\optionSetService.js" />
+    <Content Include="public\app\admin\pickOrders\pickOrder.html" />
+    <Content Include="public\app\admin\pickOrders\pickOrders.html" />
+    <Compile Include="public\app\admin\pickOrders\pickOrderController.js" />
+    <Compile Include="public\app\admin\pickOrders\pickOrdersController.js" />
+    <Compile Include="public\app\admin\pickOrders\pickOrderService.js" />
+    <Content Include="public\app\admin\products\product.html" />
+    <Content Include="public\app\admin\products\products.html" />
+    <Compile Include="public\app\admin\products\productController.js" />
+    <Compile Include="public\app\admin\products\productsController.js" />
+    <Compile Include="public\app\admin\products\productService.js" />
+    <Content Include="public\app\admin\techSpecs\techSpec.html" />
+    <Content Include="public\app\admin\techSpecs\techSpecs.html" />
+    <Compile Include="public\app\admin\techSpecs\techSpecController.js" />
+    <Compile Include="public\app\admin\techSpecs\techSpecsController.js" />
+    <Compile Include="public\app\admin\techSpecs\techSpecService.js" />
+    <Content Include="public\app\admin\ums\ums.html" />
+    <Compile Include="public\app\admin\ums\umsController.js" />
+    <Compile Include="public\app\admin\ums\umService.js" />
+    <Compile Include="public\app\shared\controllers\alertController.js" />
+    <Compile Include="public\app\shared\controllers\confirmController.js" />
+    <Compile Include="public\app\shared\directives\editSimpleList.js" />
+    <Compile Include="public\app\shared\directives\inPlaceEditText.js" />
+    <Compile Include="public\app\shared\directives\myFocus.js" />
+    <Compile Include="public\app\shared\directives\ngMatch.js" />
+    <Compile Include="public\app\shared\directives\selectFromSimpleList.js" />
+    <Compile Include="public\app\shared\directives\splitArray.js" />
+    <Compile Include="public\app\shared\services\dialogService.js" />
+    <Compile Include="public\app\shared\services\helper.js" />
+    <Content Include="public\app\shared\templates\dialog.alert.html" />
+    <Content Include="public\app\shared\templates\dialog.confirm.html" />
+    <Content Include="public\assets\css\angular-motion.css" />
+    <Content Include="public\assets\css\bootstrap-additions.css" />
+    <Content Include="public\assets\css\main.css" />
+    <Content Include="public\assets\css\main2.css" />
+    <Content Include="public\assets\translates\en.json" />
+    <Content Include="public\assets\translates\es.json" />
+    <Content Include="public\assets\translates\ro.json" />
+    <Content Include="public\assets\img\flags\flags.css" />
+    <Content Include="public\assets\img\flags\flags.png" />
+    <Content Include="public\assets\img\flags\blank.gif" />
+    <Content Include="public\assets\libs\bower\angular\angular-csp.css" />
+    <Content Include="public\assets\libs\bower\angular\.bower.json" />
+    <Content Include="public\assets\libs\bower\angular\bower.json" />
+    <Content Include="public\assets\libs\bower\angular\package.json" />
+    <Content Include="public\assets\libs\bower\angular\README.md" />
+    <Compile Include="public\assets\libs\bower\angular\angular.js" />
+    <Compile Include="public\assets\libs\bower\angular\angular.min.js" />
+    <Compile Include="public\assets\libs\bower\angular\index.js" />
+    <Content Include="public\assets\libs\bower\angular-animate\.bower.json" />
+    <Content Include="public\assets\libs\bower\angular-animate\bower.json" />
+    <Content Include="public\assets\libs\bower\angular-animate\package.json" />
+    <Content Include="public\assets\libs\bower\angular-animate\README.md" />
+    <Compile Include="public\assets\libs\bower\angular-animate\angular-animate.js" />
+    <Compile Include="public\assets\libs\bower\angular-animate\angular-animate.min.js" />
+    <Compile Include="public\assets\libs\bower\angular-animate\index.js" />
+    <Content Include="public\assets\libs\bower\angular-elastic\LICENCE.txt" />
+    <Content Include="public\assets\libs\bower\angular-elastic\index.html" />
+    <Content Include="public\assets\libs\bower\angular-elastic\.bower.json" />
+    <Content Include="public\assets\libs\bower\angular-elastic\bower.json" />
+    <Content Include="public\assets\libs\bower\angular-elastic\package.json" />
+    <Content Include="public\assets\libs\bower\angular-elastic\README.md" />
+    <Compile Include="public\assets\libs\bower\angular-elastic\elastic.js" />
+    <Content Include="public\assets\libs\bower\angular-route\.bower.json" />
+    <Content Include="public\assets\libs\bower\angular-route\bower.json" />
+    <Content Include="public\assets\libs\bower\angular-route\package.json" />
+    <Content Include="public\assets\libs\bower\angular-route\README.md" />
+    <Compile Include="public\assets\libs\bower\angular-route\angular-route.js" />
+    <Compile Include="public\assets\libs\bower\angular-route\angular-route.min.js" />
+    <Compile Include="public\assets\libs\bower\angular-route\index.js" />
+    <Content Include="public\assets\libs\bower\angular-sanitize\.bower.json" />
+    <Content Include="public\assets\libs\bower\angular-sanitize\bower.json" />
+    <Content Include="public\assets\libs\bower\angular-sanitize\package.json" />
+    <Content Include="public\assets\libs\bower\angular-sanitize\README.md" />
+    <Compile Include="public\assets\libs\bower\angular-sanitize\angular-sanitize.js" />
+    <Compile Include="public\assets\libs\bower\angular-sanitize\angular-sanitize.min.js" />
+    <Compile Include="public\assets\libs\bower\angular-sanitize\index.js" />
+    <Content Include="public\assets\libs\bower\angular-translate\.bower.json" />
+    <Content Include="public\assets\libs\bower\angular-translate\bower.json" />
+    <Content Include="public\assets\libs\bower\angular-translate\README.md" />
+    <Compile Include="public\assets\libs\bower\angular-translate\angular-translate.js" />
+    <Compile Include="public\assets\libs\bower\angular-translate\angular-translate.min.js" />
+    <Content Include="public\assets\libs\bower\angular-translate-loader-static-files\.bower.json" />
+    <Content Include="public\assets\libs\bower\angular-translate-loader-static-files\bower.json" />
+    <Content Include="public\assets\libs\bower\angular-translate-loader-static-files\README.md" />
+    <Compile Include="public\assets\libs\bower\angular-translate-loader-static-files\angular-translate-loader-static-files.js" />
+    <Compile Include="public\assets\libs\bower\angular-translate-loader-static-files\angular-translate-loader-static-files.min.js" />
+    <Content Include="public\assets\libs\bower\lodash\LICENSE.txt" />
+    <Content Include="public\assets\libs\bower\lodash\.bower.json" />
+    <Content Include="public\assets\libs\bower\lodash\bower.json" />
+    <Compile Include="public\assets\libs\bower\lodash\lodash.js" />
+    <Compile Include="public\assets\libs\bower\lodash\lodash.min.js" />
+    <Content Include="public\assets\libs\bower\ng-file-upload\.bower.json" />
+    <Content Include="public\assets\libs\bower\ng-file-upload\bower.json" />
+    <Content Include="public\assets\libs\bower\ng-file-upload\README.md" />
+    <Compile Include="public\assets\libs\bower\ng-file-upload\angular-file-upload-all.js" />
+    <Compile Include="public\assets\libs\bower\ng-file-upload\angular-file-upload-all.min.js" />
+    <Compile Include="public\assets\libs\bower\ng-file-upload\angular-file-upload-shim.js" />
+    <Compile Include="public\assets\libs\bower\ng-file-upload\angular-file-upload-shim.min.js" />
+    <Compile Include="public\assets\libs\bower\ng-file-upload\angular-file-upload.js" />
+    <Compile Include="public\assets\libs\bower\ng-file-upload\angular-file-upload.min.js" />
+    <Compile Include="public\assets\libs\bower\ng-file-upload\FileAPI.min.js" />
+    <Compile Include="public\assets\libs\bower\ng-file-upload\ng-file-upload-all.js" />
+    <Compile Include="public\assets\libs\bower\ng-file-upload\ng-file-upload-all.min.js" />
+    <Content Include="public\assets\libs\bower\ng-sortable\.bower.json" />
+    <Content Include="public\assets\libs\bower\ng-sortable\bower.json" />
+    <Content Include="public\assets\libs\bower\ng-sortable\README.md" />
+    <Content Include="public\assets\libs\bower\ng-sortable\dist\ng-sortable.css" />
+    <Content Include="public\assets\libs\bower\ng-sortable\dist\ng-sortable.min.css" />
+    <Content Include="public\assets\libs\bower\ng-sortable\dist\ng-sortable.style.css" />
+    <Content Include="public\assets\libs\bower\ng-sortable\dist\ng-sortable.style.min.css" />
+    <Compile Include="public\assets\libs\bower\ng-sortable\dist\ng-sortable.js" />
+    <Compile Include="public\assets\libs\bower\ng-sortable\dist\ng-sortable.min.js" />
+    <Compile Include="server\api\staffController.js" />
+    <Compile Include="server\data\database.js" />
+    <Compile Include="server\data\index.js" />
+    <Compile Include="server\data\seedData.js" />
+    <Content Include="server\views\contact.jade" />
+    <Content Include="server\views\index.jade" />
+    <Content Include="server\views\layout.jade" />
+    <Content Include="server\views\teachers.jade" />
+    <Compile Include="server\api\customers\customersController.js" />
+    <Compile Include="server\api\customers\customersService.js" />
+    <Compile Include="server\api\products\productsController.js" />
+    <Compile Include="server\api\products\productsService.js" />
+    <Compile Include="server\api\techSpecs\techSpecsController.js" />
+    <Compile Include="server\api\techSpecs\techSpecsService.js" />
+    <Compile Include="server\config\environment\development.js" />
+    <Compile Include="server\config\environment\index.js" />
+    <Compile Include="server\config\environment\production.js" />
+    <Compile Include="server\config\environment\test.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dist" />
+    <Folder Include="public" />
+    <Folder Include="public\app" />
+    <Folder Include="public\app\admin" />
+    <Folder Include="public\app\admin\attributes" />
+    <Folder Include="public\app\admin\attributeSets" />
+    <Folder Include="public\app\admin\customers" />
+    <Folder Include="public\app\admin\home" />
+    <Folder Include="public\app\admin\navbar" />
+    <Folder Include="public\app\admin\optionSets" />
+    <Folder Include="public\app\admin\pickOrders" />
+    <Folder Include="public\app\admin\products" />
+    <Folder Include="public\app\admin\techSpecs" />
+    <Folder Include="public\app\admin\ums" />
+    <Folder Include="public\app\frontend" />
+    <Folder Include="public\app\shared" />
+    <Folder Include="public\app\shared\controllers" />
+    <Folder Include="public\app\shared\directives" />
+    <Folder Include="public\app\shared\filters" />
+    <Folder Include="public\app\shared\services" />
+    <Folder Include="public\app\shared\templates" />
+    <Folder Include="public\assets" />
+    <Folder Include="public\assets\css" />
+    <Folder Include="public\assets\fonts" />
+    <Folder Include="public\assets\img" />
+    <Folder Include="public\assets\img\flags" />
+    <Folder Include="public\assets\js" />
+    <Folder Include="public\assets\libs" />
+    <Folder Include="public\assets\libs\bower" />
+    <Folder Include="public\assets\libs\bower\angular" />
+    <Folder Include="public\assets\libs\bower\angular-animate" />
+    <Folder Include="public\assets\libs\bower\angular-elastic" />
+    <Folder Include="public\assets\libs\bower\angular-route" />
+    <Folder Include="public\assets\libs\bower\angular-sanitize" />
+    <Folder Include="public\assets\libs\bower\angular-translate" />
+    <Folder Include="public\assets\libs\bower\angular-translate-loader-static-files" />
+    <Folder Include="public\assets\libs\bower\lodash" />
+    <Folder Include="public\assets\libs\bower\ng-file-upload" />
+    <Folder Include="public\assets\libs\bower\ng-sortable" />
+    <Folder Include="public\assets\libs\bower\ng-sortable\dist" />
+    <Folder Include="public\assets\libs\vendor" />
+    <Folder Include="public\assets\translates" />
+    <Folder Include="server" />
+    <Folder Include="server\api" />
+    <Folder Include="server\api\customers" />
+    <Folder Include="server\api\products" />
+    <Folder Include="server\api\techSpecs" />
+    <Folder Include="server\config" />
+    <Folder Include="server\config\environment" />
+    <Folder Include="server\data" />
+    <Folder Include="server\views" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

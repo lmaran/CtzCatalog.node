@@ -1,0 +1,40 @@
+﻿{
+    "Menu":
+    {
+        "Pick Orders": "Pick Orders",
+        "Products": "Products",
+        "Customers": "Customers",
+        "OptionSets": "OptionSets",
+        "Attributes": "Attributes",
+        "AttributeSets": "AttributeSets",
+        "UMs": "UMs",
+        "TechSpecs": "TechSpecs"
+    },
+ 
+    "Navbar":
+    {
+        "Admin":"Admin",
+        "Admin.Users":"Registered Users",
+        "Admin.WhiteList":"Email \"WhiteList\"",
+        "Admin.ResetPasswords":"Reset Passwords",
+
+        "Register": "Register",
+        "Login": "Log in",
+        "Logout": "Log off",
+
+        "Language": "Language",
+        "Language.Romanian": "Romanian",
+        "Language.English": "English",
+        "Language.Spanish": "Spanish"
+    },
+
+    "GlobalButtons":
+    {
+        "Add": "Add",
+        "Create": "Create",
+        "Update": "Update",
+        "Delete": "Delete",
+        "Save": "Save",
+        "Cancel": "Cancel"
+    }
+}
