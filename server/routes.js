@@ -27,7 +27,14 @@ module.exports = function (app) {
     app.get('/api/techSpecs/:id', techSpecs.getById);
     app.post('/api/techSpecs/', techSpecs.create);
     app.put('/api/techSpecs/', techSpecs.update);
-    app.delete('/api/techSpecs/:id', techSpecs.delete); 
+    app.delete('/api/techSpecs/:id', techSpecs.delete);
+    
+    var pickOrders = require('./api/pickOrders/pickOrdersController');
+    app.get('/api/pickOrders/', pickOrders.getAll);
+    app.get('/api/pickOrders/:id', pickOrders.getById);
+    app.post('/api/pickOrders/', pickOrders.create);
+    app.put('/api/pickOrders/', pickOrders.update);
+    app.delete('/api/pickOrders/:id', pickOrders.delete); 
 
     // front-end routes
     // ====================================================

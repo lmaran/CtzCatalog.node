@@ -85,17 +85,17 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider', '$toolt
         // *** pickOrders ***
         .when('/admin/pickOrders', {
             controller: 'pickOrdersController',
-            templateUrl: 'app/admin/pickOrders.html',
+            templateUrl: 'app/admin/pickOrders/pickOrders.html',
             title: 'Pick Orders'
         })
         .when('/admin/pickOrders/create', {
             controller: 'pickOrderController',
-            templateUrl: 'app/admin/pickOrder.html',
+            templateUrl: 'app/admin/pickOrders/pickOrder.html',
             title: 'Create PickOrder'
         })
         .when('/admin/pickOrders/:id', {
             controller: 'pickOrderController',
-            templateUrl: 'app/admin/pickOrder.html',
+            templateUrl: 'app/admin/pickOrders/pickOrder.html',
             title: 'Edit PickOrder',
             isEditMode: true
         })

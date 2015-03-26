@@ -17,7 +17,8 @@
                         db: db,
                         customers: db.collection('Customers'),
                         products: db.collection('Products'),
-                        techSpecs: db.collection('TechSpecs')
+                        techSpecs: db.collection('TechSpecs'),
+                        pickOrders: db.collection('PickOrders')
                     };
                     next(null, theDb);
                 }

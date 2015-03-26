@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{f8b81240-20ac-41e2-a549-8d2d8321b616}</ProjectGuid>
     <ProjectHome />
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
     <StartupFile>server\app.js</StartupFile>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -23,6 +23,8 @@
     <Content Include="public\apple-touch-icon.png" />
     <Content Include="public\favicon.ico" />
     <Compile Include="server\app.js" />
+    <Compile Include="server\api\techSpecs\techSpecsController.js" />
+    <Compile Include="server\api\techSpecs\techSpecsService.js" />
     <Compile Include="server\routes.js" />
     <Compile Include="public\app\app.js" />
     <Content Include="public\app\admin\attributes\attribute.html" />
@@ -161,7 +163,6 @@
     <Content Include="public\assets\libs\bower\ng-sortable\dist\ng-sortable.style.min.css" />
     <Compile Include="public\assets\libs\bower\ng-sortable\dist\ng-sortable.js" />
     <Compile Include="public\assets\libs\bower\ng-sortable\dist\ng-sortable.min.js" />
-    <Compile Include="server\api\staffController.js" />
     <Compile Include="server\data\database.js" />
     <Compile Include="server\data\index.js" />
     <Compile Include="server\data\seedData.js" />
@@ -173,8 +174,8 @@
     <Compile Include="server\api\customers\customersService.js" />
     <Compile Include="server\api\products\productsController.js" />
     <Compile Include="server\api\products\productsService.js" />
-    <Compile Include="server\api\techSpecs\techSpecsController.js" />
-    <Compile Include="server\api\techSpecs\techSpecsService.js" />
+    <Compile Include="server\api\pickOrders\pickOrdersController.js" />
+    <Compile Include="server\api\pickOrders\pickOrdersService.js" />
     <Compile Include="server\config\environment\development.js" />
     <Compile Include="server\config\environment\index.js" />
     <Compile Include="server\config\environment\production.js" />
@@ -227,10 +228,11 @@
     <Folder Include="server\api" />
     <Folder Include="server\api\customers" />
     <Folder Include="server\api\products" />
-    <Folder Include="server\api\techSpecs" />
+    <Folder Include="server\api\pickOrders\" />
     <Folder Include="server\config" />
     <Folder Include="server\config\environment" />
     <Folder Include="server\data" />
+    <Folder Include="server\api\techSpecs\" />
     <Folder Include="server\views" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
