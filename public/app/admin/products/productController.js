@@ -42,6 +42,7 @@
 
             // set selected AttributeSet
             $scope.dotObject.selectedAttributeSet = helper.getItemInArray($scope.attributeSets, 'id', $scope.product.attributeSetId);
+            //console.log($scope.dotObject.selectedAttributeSet);
 
             // setCurrentValues
             $scope.dotObject.attributes = $scope.product.attributes;
@@ -57,7 +58,8 @@
 
     function getProduct() {
         promiseToGetProduct = productService.getById($route.current.params.id).then(function (data) {
-            $scope.product = data;           
+            $scope.product = data;   
+            //console.log($scope.product);        
         })
         .catch(function (err) {
             alert(JSON.stringify(err, null, 4));
@@ -67,6 +69,7 @@
     function getAttributeSets() {
         promiseToGetAttributeSets = attributeSetService.getAll().then(function (data) {
             $scope.attributeSets = data;
+            //console.log($scope.attributeSets);
         })
         .catch(function (err) {
             alert(JSON.stringify(err, null, 4));
